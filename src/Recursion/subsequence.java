@@ -1,0 +1,21 @@
+package Recursion;
+
+import java.util.Scanner;
+
+public class subsequence {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the string:");
+        String str= sc.next();
+        per(str,"");
+    }
+    public static void per(String ques,String ans){
+        if(ques.length()==0){
+            System.out.println(ans);
+            return;
+        }
+        char ch=ques.charAt(0);
+        per(ques.substring(1),ans);
+        per(ques.substring(1),ans+ch);
+    }
+}
