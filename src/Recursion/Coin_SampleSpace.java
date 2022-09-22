@@ -11,10 +11,12 @@ public class Coin_SampleSpace {
     }
     public static void coin(int n,String ans){
         if(n==0){
+//            if(!ans.contains("HH"))
             System.out.println(ans);
             return ;
         }
-        coin(n-1,ans+"H");
+        if(ans.length()==0||ans.charAt(ans.length()-1)!='H')
+            coin(n-1,ans+"H");
         coin(n-1,ans+"T");
     }
 }
