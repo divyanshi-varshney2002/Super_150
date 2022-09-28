@@ -2,7 +2,7 @@ package Recursion;
 
 public class Permutation {
     public static void main(String[] args) {
-        String str="abc";
+        String str="abca";
         permutation(str,"");
     }
     public static void permutation(String ques,String ans){
