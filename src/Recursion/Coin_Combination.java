@@ -1,6 +1,6 @@
 package Recursion;
 
-public class Coin_Permutation {
+public class Coin_Combination {
     public static void main(String[] args) {
         int[] coin={2,3,5,7};
         int amount=10;
@@ -13,9 +13,7 @@ public class Coin_Permutation {
         }
         for(int i = 0; i < coin.length; i++) {
             if(amount>=coin[i]){
-//                amount-=coin[i];//backtracking steps
                 PrintAnswer(coin,amount-coin[i],ans+coin[i]);
-//                amount+=coin[i];//backtracking steps
             }
         }
     }
