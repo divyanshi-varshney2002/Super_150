@@ -2,7 +2,7 @@ package Recursion;
 
 public class Tower_of_hanoi {
     public static void main(String[] args) {
-        int n=3;
+        int n=5;
         String src="A";
         String hlp="B";
         String des="C";
