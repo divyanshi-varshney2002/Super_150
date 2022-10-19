@@ -15,6 +15,9 @@ public class Combination_sumII {
             return;
         }
         for (int i=idx;i<arr.length;i++){
+            if(i!=idx && arr[i]==arr[i-1]){
+                continue;
+            }
             if(target>=arr[i]){
                 Combination(arr,target-arr[i],ans+arr[i]+" ",i+1);
             }
