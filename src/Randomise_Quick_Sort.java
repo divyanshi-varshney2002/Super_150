@@ -1,9 +1,10 @@
 import java.util.Arrays;
+import java.util.Random;
 
-public class Quick_Sort {
+public class Randomise_Quick_Sort {
     public static void main(String[] args) {
         int arr[]={2,3,1,4,8,-11};
-        sort(arr,0,arr.length-1);
+//        int[] ans=sort(arr,0,arr.length-1);
         System.out.println(Arrays.toString(arr));
     }
     public static void sort(int arr[],int si,int ei){
@@ -15,6 +16,7 @@ public class Quick_Sort {
         sort(arr,pi+1,ei);
     }
     public static int partition(int arr[],int si,int ei){
+        swap(arr);
         int item=arr[ei];
         int pi=si;
         for (int i = si; i < ei; i++) {
@@ -29,5 +31,9 @@ public class Quick_Sort {
         arr[ei]=arr[pi];
         arr[pi]=temp;
         return pi;
+    }
+    public static void swap(int arr[]){
+        Random r=new Random();
+
     }
 }
