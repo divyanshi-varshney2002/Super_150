@@ -41,7 +41,7 @@ public class Queue {
     }
     public void displau(){
         for (int i = 0; i < size; i++) {
-            int idx=(front+size)
+            int idx=(front+size);
         }
     }
 }
