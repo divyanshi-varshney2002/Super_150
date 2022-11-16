@@ -12,6 +12,5 @@ public class Stack_Client {
         s.push(60);
         s.pop();
         s.display();
-        
     }
 }
