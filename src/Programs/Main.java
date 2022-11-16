@@ -1,3 +1,5 @@
+package Programs;
+
 import java.util.*;
 public class Main {
     // public static void swap(int arr[],int i,int j){

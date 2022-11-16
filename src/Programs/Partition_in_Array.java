@@ -1,18 +1,12 @@
+package Programs;
+
 import java.util.Arrays;
 
-public class Quick_Sort {
+public class Partition_in_Array {
     public static void main(String[] args) {
-        int arr[]={2,3,1,4,8,-11};
-        sort(arr,0,arr.length-1);
+        int arr[]={5,7,2,3,8,9,1,4};
+        int ans=partition(arr,0,arr.length-1);
         System.out.println(Arrays.toString(arr));
-    }
-    public static void sort(int arr[],int si,int ei){
-        if(si>ei){
-            return;
-        }
-        int pi=partition(arr,si,ei);
-        sort(arr,si,pi-1);
-        sort(arr,pi+1,ei);
     }
     public static int partition(int arr[],int si,int ei){
         int item=arr[ei];

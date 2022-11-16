@@ -1,21 +1,13 @@
-import java.util.Arrays;
+package Programs;
 
-public class Merge_Sort {
+public class Merge_Two_SortedArray {
     public static void main(String[] args) {
-        int arr[]={2,3,1,4,8,-11};
-        int[] ans=sort(arr,0,arr.length-1);
-        System.out.println(Arrays.toString(ans));
-    }
-    public static int[] sort(int arr[],int si,int ei){
-        if(si==ei){
-            int[] bs=new int[1];
-            bs[0]=arr[si];
-            return bs;
+        int[] arr1={3,5,7,9,11};
+        int[] arr2={1,2,3,4,7,8};
+        int ans[]=MergeTwoArray(arr1,arr2);
+        for(int i=0;i<ans.length;i++){
+            System.out.print(ans[i]+" ");
         }
-        int mid=(si+ei)/2;
-        int[] fs=sort(arr,si,mid);
-        int[] ss=sort(arr,mid+1,ei);
-        return MergeTwoArray(fs,ss);
     }
     public static int[] MergeTwoArray(int arr1[],int arr2[]){
         int i=0;
