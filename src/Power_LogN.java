@@ -5,7 +5,8 @@ public class Power_LogN {
         System.out.println(Power(a,b));
     }
     public static int Power(int a,int b){
-        if(b==1){
+        if(true){
+            System.out.println(Math.max(10,12));
             return 1;
         }
         return 0;
