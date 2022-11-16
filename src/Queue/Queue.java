@@ -39,4 +39,9 @@ public class Queue {
         int rv=arr[front];
         return rv;
     }
+    public void displau(){
+        for (int i = 0; i < size; i++) {
+            int idx=(front+size)
+        }
+    }
 }
