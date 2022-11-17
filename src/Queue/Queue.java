@@ -5,9 +5,9 @@ public class Queue {
     FIFO (First in first Out)
     LILO (Last In Last Out)
      */
-    private int arr[];
-    private int front;
-    private int size;
+    protected int arr[];
+    protected int front;
+    protected int size;
     public Queue(){
         arr=new int [5];
         front=0;
@@ -41,7 +41,9 @@ public class Queue {
     }
     public void displau(){
         for (int i = 0; i < size; i++) {
-            int idx=(front+size);
+            int idx = (front + i) % arr.length;
+            System.out.print(arr[idx] + " ");
         }
+        System.out.println();
     }
 }
