@@ -1,6 +1,8 @@
 package Inheritance;
 
-public class C {
+public class C extends P{
+//    Child C: which extends Parent P
+//    child can use the property of parent but parent cann't
     int d=2;
     int d2=20;
     public void fun(){
