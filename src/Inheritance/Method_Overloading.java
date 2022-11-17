@@ -10,6 +10,7 @@ public class Method_Overloading {
         System.out.println(add(2,3,4));
         System.out.println(add(2,3,5.8f));
         //multiple variable
+        //triple dot symbol
         System.out.println(add(1,3,6,89,4,7,-4,6,-7,45,3));
     }
     public static int add(int a,int b){
@@ -21,7 +22,7 @@ public class Method_Overloading {
     public static int add(int a,int b,float c){
         return (int)(a+b+c);
     }
-    //triple dot multiple variable is always use as rightmost argument 
+    //triple dot multiple variable is always use as rightmost argument
     public static int add(int x,int ... a){
         int sum=0;
         for(int i=0;i<a.length;i++){
