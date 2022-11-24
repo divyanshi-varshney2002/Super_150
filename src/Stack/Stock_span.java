@@ -21,9 +21,6 @@ public class Stock_span {
             }
             st.push(i);
         }
-//        while (!st.isEmpty()){
-//            ans[st.pop()]=-1;
-//        }
         for (int i = 0; i < ans.length; i++) {
             System.out.println(arr[i]+" "+ans[i]);
         }
