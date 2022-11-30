@@ -38,7 +38,7 @@ public class N_queen {
             c--;
             r--;
         }
-        // left Diagonal
+        // right Diagonal
         r = row;
         c = col;
         while (r >= 0 && c < board.length) {
