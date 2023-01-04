@@ -88,6 +88,36 @@ public class LinkedList {
         return getNode(k).val;
     }
 
+    public int removeFirst(){
+        Node temp=head;
+        return temp.val;
+    }
+
+    public int removeLast() throws Exception{
+        if(size==1){
+            return removeFirst();
+        }
+        else{
+            Node ss=getNode(size-2);
+        }
+        Node temp=head;
+        return temp.val;
+    }
+
+    public int removeAtIndex(int k) throws Exception{
+        if(k==0) removeFirst();
+        else if(k==size-1) removeLast();
+        else {
+            Node prev = getNode(k - 1);
+            Node curr = prev.next;
+            prev.next = curr.next;
+            curr.next = null;
+            size--;
+            return curr.val;
+        }
+        return 0;//dummy
+    }
+
     public static void main(String[] args) throws Exception {
         Scanner sc=new Scanner(System.in);
         LinkedList ll =new LinkedList();
@@ -103,5 +133,7 @@ public class LinkedList {
         System.out.println(ll.getFirst());
         System.out.println(ll.getLast());
         System.out.println(ll.getAtIndex(4));
+        System.out.println(ll.removeAtIndex(3));
+        ll.display();
     }
 }
