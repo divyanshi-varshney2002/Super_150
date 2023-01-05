@@ -18,4 +18,6 @@ public class CycleIn_LinkedList {
         }
         return false;
     }
+    //flawid  cycle detection algorithm
+    //2 se aage jaa raha h 3,4 kisi se bhi jaa skte but no. of iteration badh jaayenge
 }
