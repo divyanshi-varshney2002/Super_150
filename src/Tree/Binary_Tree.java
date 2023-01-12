@@ -17,10 +17,10 @@ public class Binary_Tree {
         Node nn=new Node();
         nn.val=item;
         boolean hlc=sc.nextBoolean();  //has left child
-        boolean hrc=sc.nextBoolean();  //has right child
         if(hlc){
             nn.left=CreateTree();
         }
+        boolean hrc=sc.nextBoolean();  //has right child
         if(hrc){
             nn.right=CreateTree();
         }
