@@ -31,6 +31,7 @@ public class Binary_Tree {
 //        5        7
 //       /  \    /  \
 //      .    11 9    .
+//    10 true 5 false true 11 false false true 7 true 9 false false false
     public void display(){
         display(root);
     }
