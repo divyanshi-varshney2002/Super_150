@@ -66,7 +66,6 @@ public class Create_LevelOrder {
         PreOrder(node.left);
         PreOrder(node.right);
     }
-
     public static void main(String[] args) {
         Create_LevelOrder cl=new Create_LevelOrder();
         cl.PreOrder();
