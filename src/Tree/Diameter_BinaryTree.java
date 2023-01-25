@@ -30,7 +30,7 @@ public class Diameter_BinaryTree {
         if(root==null)  return new Diapair();
         Diapair ldp=diameter(root.left);//left DiaPair
         Diapair rdp=diameter(root.right);//right DiaPair
-        Diapair sdp=new Diapair();
+        Diapair sdp=new Diapair();//self Diapair
         int sd=ldp.ht+rdp.ht+2;
         sdp.d=Math.max(ldp.d,Math.max(rdp.d,sd));
         sdp.ht=Math.max(ldp.ht,rdp.ht)+1;
