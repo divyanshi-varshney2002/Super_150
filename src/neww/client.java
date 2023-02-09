@@ -27,4 +27,15 @@ public class client {
             }
         }
     }
+    public static void bubble(Object[] arr){
+        for(int c=1;c< arr.length-1;c++) {
+            for (int i = 0; i < arr.length - 1; i++) {
+//                if (arr[i].age > arr[i + 1].age) {
+                    Object temp = arr[i];
+                    arr[i] = arr[i + 1];
+                    arr[i + 1] = temp;
+//                }
+            }
+        }
+    }
 }
