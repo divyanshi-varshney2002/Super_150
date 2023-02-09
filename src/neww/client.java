@@ -27,14 +27,15 @@ public class client {
             }
         }
     }
-    public static void bubble(Object[] arr){
+    public static<T extends Comparable<T>> void bubble(T[] arr){
         for(int c=1;c< arr.length-1;c++) {
             for (int i = 0; i < arr.length - 1; i++) {
 //                if (arr[i].age > arr[i + 1].age) {
-                    Object temp = arr[i];
+                if(arr[i].compareTo(arr[i+1])>0){
+                    T temp = arr[i];
                     arr[i] = arr[i + 1];
                     arr[i + 1] = temp;
-//                }
+                }
             }
         }
     }

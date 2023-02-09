@@ -3,6 +3,7 @@ package Interface;
 public class Stack implements Stack_Interface,Min_Stack_I{
     @Override
     public int pop() {
+        int temp=this.i;
         return 0;
     }
 
