@@ -1,6 +1,6 @@
 package Priority_Queue;
 
-public class Cars {
+public class Cars implements Comparable<Cars> {
     int price;
     int speed;
     String color;
@@ -16,6 +16,6 @@ public class Cars {
         return "P : " + this.price + " S: " + this.speed + " C:" + this.color;
     }
     public int compareTo(Cars o){
-        return 0;
+        return this.price-o.price;
     }
 }
