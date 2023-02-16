@@ -9,7 +9,8 @@ public class Generic_Heap_Client {
         gp.add(new Cars(34, 89, "Grey"));
         gp.add(new Cars(8907, 6, "Red"));
         gp.display();
-
+        System.out.println(gp.max());
+        gp.display();
     }
 }
 
