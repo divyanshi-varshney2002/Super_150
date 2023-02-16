@@ -17,6 +17,7 @@ public class Quick_Sort {
             }
         }
         swap(arr,i+1,end);
+        System.out.println(Arrays.toString(arr));
         return (i+1);
     }
     static void qsort(int arr[],int beg,int end){
