@@ -12,6 +12,7 @@ public class Heap {
         int pi=(ci-1)/2;
         if(list.get(pi)>list.get(ci)){
             swap(pi,ci);
+            unheapify(pi);
         }
     }
     private void swap(int i,int j){
