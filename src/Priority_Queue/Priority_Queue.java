@@ -1,6 +1,6 @@
 package Priority_Queue;
 
-public class PriorityQueue {
+public class Priority_Queue {
 }
 
 //  Priority_Queue : It ks a complete binary tree. In complete binary tree every root has two children first left then only right child.
