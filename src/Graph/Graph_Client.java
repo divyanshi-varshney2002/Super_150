@@ -13,10 +13,10 @@ public class Graph_Client {
         g.AddEdge(5,6,4);
         g.AddEdge(7,5,2);
         g.AddEdge(6,7,3);
-//        g.Display();
-//        g.RemoveVertex(4);
-//        System.out.println();
-//        g.Display();
+        g.Display();
+        g.RemoveVertex(4);
+        System.out.println();
+        g.Display();
         System.out.println(g.HasPath(1,6,new HashSet<>()));
     }
 }
