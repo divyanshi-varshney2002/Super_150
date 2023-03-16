@@ -61,4 +61,19 @@ public class Graph {
         visited.remove(src);
         return false;
     }
+
+    public void PrintAllPath(int src, int des, HashSet<Integer> visited,String ans){
+        if(src==des){
+            System.out.println(ans+des);
+            return;
+        }
+        visited.add(src);
+        for(int nbrs:map.get(src).keySet()){
+            if(!visited.contains(nbrs)) {
+                PrintAllPath(nbrs,des,visited,ans+src+"-->");
+            }
+        }
+        visited.remove(src);
+        return ;
+    }
 }
