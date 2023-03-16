@@ -19,5 +19,7 @@ public class Graph_Client {
 //        g.Display();
         System.out.println(g.HasPath(1,6,new HashSet<>()));
         g.PrintAllPath(1,6,new HashSet<>(),"");
+        g.RemoveVertex(4);
+        System.out.println(g.BFS(1,6));
     }
 }

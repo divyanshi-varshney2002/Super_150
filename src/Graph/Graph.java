@@ -2,6 +2,8 @@ package Graph;
 
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.Queue;
 
 public class Graph {
     private HashMap<Integer,HashMap<Integer,Integer>> map=new HashMap<>();
@@ -75,5 +77,25 @@ public class Graph {
         }
         visited.remove(src);
         return ;
+    }
+    public boolean BFS(int src,int des){
+        HashSet<Integer> visited=new HashSet<>();
+        Queue<Integer> q=new LinkedList<>();
+        q.add(src);
+        while(!q.isEmpty()){
+            //1.remove
+            int rv=q.poll();
+            //2.Ignore
+            if(visited.contains(rv)) continue;
+            //3.visited
+            visited.add(rv);
+            //4.self work
+            if(rv==des) return true;
+            //neighbours add
+            for(int nbrs:map.get(rv).keySet())
+                if(!visited.contains(nbrs))
+                    q.add(nbrs);
+        }
+        return false;
     }
 }
