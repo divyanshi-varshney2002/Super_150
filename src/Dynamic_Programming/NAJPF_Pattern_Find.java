@@ -28,7 +28,7 @@ public class NAJPF_Pattern_Find {
         ArrayList<Integer> ll=new ArrayList<>();
         if(dp[t.length()-1]==hv) ll.add(1);
 
-        
+
         if(ll.size()==0) System.out.println("Not Found");
         else ll.size();
 
